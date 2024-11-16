@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MovesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Move1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Producer" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Year" Type="Int32" />
+    <Property Name="UserId" Type="Int32" />
+    <NavigationProperty Name="User1" Relationship="Self.FK__Move1__UserId__3B75D760" FromRole="Move1" ToRole="User1" />
+  </EntityType>
+  <EntityType Name="User1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Move1" Relationship="Self.FK__Move1__UserId__3B75D760" FromRole="User1" ToRole="Move1" />
+  </EntityType>
+  <Association Name="FK__Move1__UserId__3B75D760">
+    <End Role="User1" Type="Self.User1" Multiplicity="0..1" />
+    <End Role="Move1" Type="Self.Move1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User1">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Move1">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MovesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Move1" EntityType="Self.Move1" />
+    <EntitySet Name="User1" EntityType="Self.User1" />
+    <AssociationSet Name="FK__Move1__UserId__3B75D760" Association="Self.FK__Move1__UserId__3B75D760">
+      <End Role="User1" EntitySet="User1" />
+      <End Role="Move1" EntitySet="Move1" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

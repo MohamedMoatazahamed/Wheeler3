@@ -1,0 +1,28 @@
+﻿<Page x:Class="Moves.deatailsmove"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Moves"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="deatailsmove">
+
+    <Grid Background="White">
+        <Label Content="MoveName" HorizontalAlignment="Left" Margin="189,94,0,0" VerticalAlignment="Top" Height="50" Width="145" FontSize="22"/>
+        <Label Content="Catogrey" HorizontalAlignment="Left" Margin="189,175,0,0" VerticalAlignment="Top" Height="50" Width="145" FontSize="22"/>
+        <Label Content="pnducer" HorizontalAlignment="Left" Margin="189,255,0,0" VerticalAlignment="Top" Height="50" Width="145" FontSize="22"/>
+        <Label Content="year" HorizontalAlignment="Left" Margin="189,342,0,0" VerticalAlignment="Top" Height="50" Width="145" FontSize="22"/>
+        <TextBox HorizontalAlignment="Left" Margin="381,90,0,0" VerticalAlignment="Top" Height="54" Width="237" Text="{Binding Name}"/>
+
+
+        <TextBox HorizontalAlignment="Left" Margin="381,171,0,0" VerticalAlignment="Top" Height="54" Width="237" Text="{Binding Category}"/>
+
+ 
+        <TextBox HorizontalAlignment="Left" Margin="381,255,0,0" VerticalAlignment="Top" Height="54" Width="237" Text="{Binding Producer}"/>
+
+ 
+        <TextBox HorizontalAlignment="Left" Margin="381,324,0,0" VerticalAlignment="Top" Height="54" Width="237" Text="{Binding Year}"/>
+
+    </Grid>
+</Page>

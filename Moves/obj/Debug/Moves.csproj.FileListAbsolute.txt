@@ -1,0 +1,33 @@
+C:\Users\moham\source\repos\Moves\Moves\bin\Debug\Moves.exe.config
+C:\Users\moham\source\repos\Moves\Moves\bin\Debug\Moves.exe
+C:\Users\moham\source\repos\Moves\Moves\bin\Debug\Moves.pdb
+C:\Users\moham\source\repos\Moves\Moves\bin\Debug\EntityFramework.dll
+C:\Users\moham\source\repos\Moves\Moves\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\moham\source\repos\Moves\Moves\bin\Debug\EntityFramework.xml
+C:\Users\moham\source\repos\Moves\Moves\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\Moves.csproj.AssemblyReference.cache
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\AllMoves.g.cs
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\forgetpassword.g.cs
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\Login.g.cs
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\MainWindow.g.cs
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\sign up.g.cs
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\App.g.cs
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\Moves_Content.g.cs
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\Moves_MarkupCompile.cache
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\Moves_MarkupCompile.lref
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\AllMoves.baml
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\forgetpassword.baml
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\Login.baml
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\MainWindow.baml
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\sign up.baml
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\Moves.g.resources
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\Moves.Properties.Resources.resources
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\Moves.csproj.GenerateResource.cache
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\Moves.csproj.CoreCompileInputs.cache
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\Moves.csproj.Up2Date
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\Moves.exe
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\Moves.pdb
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\deatailsmove.g.cs
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\deatailsmove.baml
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\Admin.g.cs
+C:\Users\moham\source\repos\Moves\Moves\obj\Debug\Admin.baml

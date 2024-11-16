@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MovesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Move1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Producer" Type="varchar" MaxLength="40" />
+    <Property Name="Category" Type="varchar" MaxLength="50" />
+    <Property Name="Year" Type="int" />
+    <Property Name="UserId" Type="int" />
+  </EntityType>
+  <EntityType Name="User1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__Move1__UserId__3B75D760">
+    <End Role="User1" Type="Self.User1" Multiplicity="0..1" />
+    <End Role="Move1" Type="Self.Move1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User1">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Move1">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MovesModelStoreContainer">
+    <EntitySet Name="Move1" EntityType="Self.Move1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User1" EntityType="Self.User1" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Move1__UserId__3B75D760" Association="Self.FK__Move1__UserId__3B75D760">
+      <End Role="User1" EntitySet="User1" />
+      <End Role="Move1" EntitySet="Move1" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
